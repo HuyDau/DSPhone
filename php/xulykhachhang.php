@@ -1,5 +1,5 @@
 <?php
-    require_once('../BackEnd/ConnectionDB/DB_classes.php');
+    require_once('../ConnectionDB/DB_classes.php');
 
     if(!isset($_POST['request']) && !isset($_GET['request'])) die(null);
 
@@ -15,7 +15,7 @@
 				$key = $_POST['key'];
 				$trangthai = $_POST['trangThai'];
 				
-		    	die (json_encode($khachhangBUS->capNhapTrangThai($trangthai, $key)));
+		    	//die (json_encode($khachhangBUS->capNhapTrangThai($trangthai, $key)));
     		break;
 
 	    case 'delete':

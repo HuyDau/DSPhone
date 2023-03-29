@@ -1,11 +1,10 @@
 /* Header */
 	.header {
 		position: sticky;
-		position: -webkit-sticky; /* Safari */
 		top: 0;
 		z-index: 12;
-		background-color: white;
-		padding: 15px 0 5px 0 ;
+		background-color: #cd1818;
+		padding: 15px 0  ;
 		border-bottom: 3px solid #e1e1e1;
 	}
 
@@ -15,7 +14,7 @@
 
 	/* Logo */
 		.header .logo {
-			width: 250px;
+			width: 20%;
 			height: 60px;
 			float: left;
 			transition-duration: .1s;
@@ -44,50 +43,43 @@
 	/* Content */
 		.header .content{
 			/* tru width cua logo */
-			width: calc(100% - 250px);
+			width: 80%;
 			float: left;
 		}
 
 		/* Search */
 			.search-header {
 				float: left;
+				width: 65%;
 			}
 
 			form.input-search {
 				margin-left: 20px;
 				background: #ddd;
-				border: 2px solid #bbb;
 				border-radius: 10px;
 				height: 35px;
-				width: 300px;
-				/* điều chỉnh width của ô tìm kiếm trên header ở đây */
+				width: 90%;
 			}
 			.input-search input {
 				float: left;
-				padding-left: 15px;
 				border: none;
 				border-radius: 10px 0 0 10px;
 				height: 100%;
-				width: calc(100% - 100px - 20px);
-				/* 100 la width button, 20 la padding button */
+				width: 90%;
 			}
 			.input-search button {
 				float: right;
 				font-size: 14px;
-				font-weight: bold;
-				padding: 0 10px;
-				color: #888;
-				background: none;
-				width: 100px;
+				color: white;
+				background: black;
+				width: 10%;
 				height: 100%;
 				border: none;
 				cursor: pointer;
-				-webkit-transition-duration: .3s;
-				     -o-transition-duration: .3s;
-				        transition-duration: .3s;
+				border-radius: 0 10px 10px 0;
 			}
 			.input-search button:hover {
-				color: #000;
+				color: gray;
 			}
 
 			.tags {
@@ -105,7 +97,6 @@
 
 			/* W3 school autocomplete */
 				.autocomplete {
-					/*the container must be positioned relative:*/
 					position: relative;
 					height: 100%;
 				}
@@ -141,8 +132,7 @@
 		/* Tools Member */
 			.tools-member {
 				float: right;
-				display: table;
-				margin-left: 10px;
+				width: 35%;
 				font-size: 14px;
 			}
 
@@ -152,7 +142,7 @@
 				text-align: center;
 				font-size: 16px;
 				font-weight: bold;
-				color: #565;
+				color: white;
 				cursor: pointer;
 			}
 			.tools-member a:hover > i {
@@ -161,14 +151,8 @@
 				color: #fff;
 			}
 
-			.tools-member i { /* icon */
-				padding: 10px;
-				border-radius: 50%;
-				border: 1px solid #ccc;
-				background-color: #fff;
-				color: #000;
-				-webkit-transition: 0.2s;
-				-o-transition: 0.2s;
+			.tools-member i {
+				color: white;
 				transition: 0.2s;
 			}
 			.tools-member .fa-user {
@@ -176,12 +160,12 @@
 			}
 			.tools-member .fa-shopping-cart {
 				padding: 10px 11px;
+				font-size: 20px;
 			}
 			/* Member */
 				.member {
 					position: relative;
 					float: left;
-					display: table-cell;
 				}
 				.member:hover > .menuMember{
 					z-index: 20;
@@ -224,7 +208,7 @@
 					bottom: -1em;
 					font-weight: bold;
 					font-size: 1em;
-					color: red;
+					color: white;
 					border-radius: 50%;
 					width: 2em;
 					height: 2em;

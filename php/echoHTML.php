@@ -46,7 +46,6 @@ function addHeader()
                         <input id="search-box" name="search" autocomplete="off" type="text" placeholder="Nhập từ khóa tìm kiếm...">
                         <button type="submit">
                             <i class="fa fa-search"></i>
-                            Tìm kiếm
                         </button>
                     </div>
                 </form> <!-- End Form search -->
@@ -70,7 +69,7 @@ function addHeader()
                 <div class="cart">
                     <a href="giohang.php">
                         <i class="fa fa-shopping-cart"></i>
-                        <span>Giỏ hàng</span>
+                        
                         <span class="cart-number"></span>
                     </a>
                 </div> <!-- End Cart -->
